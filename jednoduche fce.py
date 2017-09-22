@@ -109,6 +109,9 @@ def empty_square(n):
 # . . . #
 # # # # #
 """
+
+
+
 def chessboard(n):
     for row in range(n):
         for column in range(n):
@@ -130,3 +133,7 @@ def chessboard(n):
 . # . # . # . #
 """
 chessboard(8)
+
+
+
+

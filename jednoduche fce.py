@@ -111,18 +111,23 @@ def empty_square(n):
 """
 
 
-
 def chessboard(n):
     for row in range(n):
-        for column in range(n):
+        for column in range(n // 2):
             if row % 2 == 0:
                 print("# .", end=" ")
             else:
                 print(". #", end=" ")
+
+        if n % 2 == 1:
+            if row % 2 == 0:
+                print("#", end=" ")
+            else:
+                print(".", end=" ")
+
         print()
-
-
 """
+
 # . # . # . # .
 . # . # . # . #
 # . # . # . # .
